@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-common',
+  selector: 'lib-login',
   template: `
     <p>
-      common works!
+      login works!
     </p>
   `,
   styles: [
   ]
 })
-export class CommonComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
   constructor() { }
 

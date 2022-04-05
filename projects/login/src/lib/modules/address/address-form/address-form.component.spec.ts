@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CommonComponent } from './common.component';
+import { AddressFormComponent } from './address-form.component';
 
-describe('CommonComponent', () => {
-  let component: CommonComponent;
-  let fixture: ComponentFixture<CommonComponent>;
+describe('AddressFormComponent', () => {
+  let component: AddressFormComponent;
+  let fixture: ComponentFixture<AddressFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CommonComponent ]
+      declarations: [ AddressFormComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CommonComponent);
+    fixture = TestBed.createComponent(AddressFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
