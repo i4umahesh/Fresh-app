@@ -1,1 +1,10 @@
-<p>login-form works!</p>
+<form [formGroup]="loginForm">
+  <div class="mb-3">
+    <label class="form-label">Mobile Number</label>
+    <input numberOnly  type="text" id="name" name="name" class="form-control" required minlength="10" 
+    formControlName="mobilenumber" maxlength="10" minlength="10">
+    <div *ngIf="!loginForm.controls['mobilenumber'].value && loginForm.controls['mobilenumber'].touched"  class="alert alert-danger">please enter mobile number</div>
+    <div *ngIf="loginvalid" class="alert alert-danger">please enter valid mobile number</div>
+  </div>
+  <button type="submit" [disabled]="loginForm.controls['mobilenumber'].invalid" class="btn btn-primary" (click)="submitLogin()">Submit</button>
+</form>
