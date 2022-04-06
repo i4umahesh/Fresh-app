@@ -4,17 +4,13 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "app-login": [
-        "dist/app-login/app-login",
-        "dist/app-login"
+      "@fresh-app/login": [
+        "projects/app-login/src/public-api",
+        // "dist/app-login/src/public-api"
       ],
-      "common": [
-        "dist/common/common",
-        "dist/common"
-      ],
-      "login": [
-        "dist/login/login",
-        "dist/login"
+      "@fresh-app/login/*": [
+        "projects/app-login/*",
+        // "dist/app-login/*"
       ]
     },
     "outDir": "./dist/out-tsc",

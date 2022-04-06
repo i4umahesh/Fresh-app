@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { AppLoginComponent } from './app-login.component';
-import { AppLoginFormComponent } from './modules/components/app-login-form/app-login-form.component';
+import { LoginFormComponent } from './modules/components/login-form/login-form.component';
 
 
 
 @NgModule({
   declarations: [
     AppLoginComponent,
-    AppLoginFormComponent
+    LoginFormComponent
   ],
   imports: [
   ],
   exports: [
-    AppLoginComponent
+    AppLoginComponent,
+    LoginFormComponent
   ]
 })
 export class AppLoginModule { }
